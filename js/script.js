@@ -1,0 +1,3 @@
+function toggleDemo() {
+  halfmoon.toggleDarkMode();
+}
