@@ -7,11 +7,21 @@
 }
 
 .p-section {
-  padding: 5em 5em 2em 2em;
+  padding: 5em 2em 5em 2em;
 }
 
 .style-inicio {
   max-width: 900px;
   width: 100%;
   padding: 2em;
+}
+
+.h-100-vh {
+  height: 100vh;
+}
+
+.content-wrapper,
+body,
+html {
+  position: relative;
 }

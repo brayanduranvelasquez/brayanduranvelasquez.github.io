@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="with-custom-webkit-scrollbars with-custom-css-scrollbars">
 
 <head>
   <meta charset="utf-8" />
@@ -11,17 +11,19 @@
 
   <title>Portafolio - Brayan Durán Velásquez</title>
 
-  <link href="./css/halfmoon/halfmoon.min.css" rel="stylesheet" />
+  <link href="./css/halfmoon/halfmoon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/aos/aos-2-3-1.css">
   <link href="./css/styles.css" rel="stylesheet" />
   <link href="./css/font.css" rel="stylesheet" />
 
   <script src="https://kit.fontawesome.com/57bdc0c5ea.js" crossorigin="anonymous" defer></script>
+  <script src="./js/aos/aos-2-3-1.js"></script>
+  <script src="./js/aos/script.js" defer></script>
   <script src="./js/halfmoon/halfmoon.min.js" defer></script>
   <script src="./js/script.js" defer></script>
 </head>
 
-<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true"
-  data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+<body data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
 
   <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-all">
     <div class="sticky-alerts"></div>
@@ -55,8 +57,9 @@
 
     <main class="content-wrapper">
       <!-- Vista inicial -->
-      <div class="h-full d-flex flex-column justify-content-center align-items-center background-img">
-        <div class="style-inicio">
+      <div class="d-flex flex-column justify-content-center align-items-center background-img h-100-vh"
+        data-aos-mirror="false">
+        <div class="style-inicio" data-aos="fade-down">
           <h1 class="text-white font-weight-bold">TSU. Brayan Durán Velásquez</h1>
           <h5 class="text-white">Actualmente adquiriendo más conocimientos en
             el campo del desarrollo web, particularmente prefiriedo el
@@ -73,7 +76,7 @@
       <!-- Vista inicial -->
 
       <!-- Proyectos -->
-      <div class="d-flex flex-column justify-content-center align-items-center p-section">
+      <div class="d-flex flex-column justify-content-center align-items-center p-section" data-aos="fade-down">
         <div class="container">
 
           <div>
@@ -144,6 +147,7 @@
       </div>
       <!-- Proyectos -->
     </main>
+  </div>
 </body>
 
 </html>
