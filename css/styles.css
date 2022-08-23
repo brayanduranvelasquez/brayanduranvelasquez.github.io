@@ -1,7 +1,17 @@
-.inicio {
+.background-img {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+}
+
+.p-section {
+  padding: 5em 5em 2em 2em;
+}
+
+.style-inicio {
+  max-width: 900px;
+  width: 100%;
+  padding: 2em;
 }

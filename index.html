@@ -1,71 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-      name="viewport"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <title>Portafolio - Brayan Durán Velásquez</title>
 
-    <link href="./css/styles.css" rel="stylesheet" />
-    <link href="./css/halfmoon/halfmoon.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/font.css">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="portafilio personal">
+  <meta name="keywords" content="portafolio">
 
-    <script src="./js/script.js" defer></script>
-    <script src="./js/halfmoon/halfmoon.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/57bdc0c5ea.js" crossorigin="anonymous" defer></script>
-  </head>
-  <body
-    class="with-custom-webkit-scrollbars with-custom-css-scrollbars"
-    data-dm-shortcut-enabled="true"
-    data-sidebar-shortcut-enabled="true"
-    data-set-preferred-mode-onload="true"
-  >
-    <div
-      class="page-wrapper with-navbar with-sidebar"
-      data-sidebar-type="overlayed-sm-and-down"
-    >
-        <div class="sticky-alerts"></div>
+  <title>Portafolio - Brayan Durán Velásquez</title>
 
-        <nav class="navbar">
-            <div class="navbar-content">
-            <button
-                class="btn btn-action"
-                type="button"
-                onclick="halfmoon.toggleSidebar()"
-            >
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                <span class="sr-only">Menú</span>
-            </button>
-            </div>
-            <a href="#" class="navbar-brand">Brayan</a>
+  <link href="./css/halfmoon/halfmoon.min.css" rel="stylesheet" />
+  <link href="./css/styles.css" rel="stylesheet" />
+  <link href="./css/font.css" rel="stylesheet" />
 
-            <div class="d-flex ml-auto">
-            <button class="btn" type="button" onclick="toggleDemo()">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-            </div>
-        </nav>
+  <script src="https://kit.fontawesome.com/57bdc0c5ea.js" crossorigin="anonymous" defer></script>
+  <script src="./js/halfmoon/halfmoon.min.js" defer></script>
+  <script src="./js/script.js" defer></script>
+</head>
 
-        <div class="sidebar">
-            <div class="sidebar-menu">
-            <a href="#" class="sidebar-brand">Portafolio</a>
-            <h5 class="sidebar-title">Secciones</h5>
-            <div class="sidebar-divider"></div>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true"
+  data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
 
-            <a href="#" class="sidebar-link">Inicio</a>
-            </div>
+  <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-all">
+    <div class="sticky-alerts"></div>
+
+    <nav class="navbar">
+      <div class="navbar-content">
+        <button class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          <span class="sr-only">Menú</span>
+        </button>
+      </div>
+      <a href="#" class="navbar-brand">Brayan</a>
+
+      <div class="d-flex ml-auto">
+        <button class="btn" type="button" onclick="toggleDemo()">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <aside class="sidebar">
+      <div class="sidebar-menu">
+        <a href="#" class="sidebar-brand">Portafolio</a>
+        <h5 class="sidebar-title">Secciones</h5>
+        <div class="sidebar-divider"></div>
+
+        <a href="#" class="sidebar-link">Inicio</a>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+    <main class="content-wrapper">
+      <!-- Vista inicial -->
+      <div class="h-full d-flex flex-column justify-content-center align-items-center background-img">
+        <div class="style-inicio">
+          <h1 class="text-white font-weight-bold">TSU. Brayan Durán Velásquez</h1>
+          <h5 class="text-white">Actualmente adquiriendo más conocimientos en
+            el campo del desarrollo web, particularmente prefiriedo el
+            ambiente del Front-end. ¡Autodidacta y comprometido en aprender
+            cada vez más!</h5>
+          <div>
+            <button class="btn btn-primary btn-rounded btn-lg">Contactar
+              &nbsp;<i class="fa-solid fa-address-book"></i></button>
+            <button class="btn btn-primary btn-rounded btn-lg">Descargar CV
+              &nbsp;<i class="fa-solid fa-file-pdf"></i></button>
+          </div>
         </div>
-        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+      </div>
+      <!-- Vista inicial -->
 
-        <div class="content-wrapper">
-            <div class="inicio h-full d-flex justify-content-center align-items-center">
-                <div>Hola</div>
+      <!-- Proyectos -->
+      <div class="d-flex flex-column justify-content-center align-items-center p-section">
+        <div class="container">
+
+          <div>
+            <p class="font-size-24 m-0">Mis Proyectos</p>
+            <hr style="background-color: #ccc">
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="mw-full">
+                <div class="card p-0">
+                  <div class="w-full h-200 d-flex flex-column justify-content-center align-items-center"
+                    style="background-color: #ccc;">
+                    <i style="font-size: 64px;" class="fa-solid fa-xl fa-image"></i>
+                  </div>
+                  <div class="content">
+                    <h2 class="content-title">
+                      Sitio web
+                    </h2>
+                    <p class="text-muted">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic asperiores, voluptate enim recusandae laborum itaque suscipit voluptas omnis molestiae voluptatem, alias eligendi aut voluptatum a obcaecati ab, placeat similique! Enim!</div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="mw-full">
+                <div class="card p-0">
+                  <div class="w-full h-200 d-flex flex-column justify-content-center align-items-center"
+                    style="background-color: #ccc;">
+                    <i style="font-size: 64px;" class="fa-solid fa-xl fa-image"></i>
+                  </div>
+                  <div class="content">
+                    <h2 class="content-title">
+                      Sitio web
+                    </h2>
+                    <p class="text-muted">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="mw-full">
+                <div class="card p-0">
+                  <div class="w-full h-200 d-flex flex-column justify-content-center align-items-center"
+                    style="background-color: #ccc;">
+                    <i style="font-size: 64px;" class="fa-solid fa-xl fa-image"></i>
+                  </div>
+                  <div class="content">
+                    <h2 class="content-title">
+                      Sitio web
+                    </h2>
+                    <p class="text-muted">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing
+                      elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-  </body>
+      </div>
+      <!-- Proyectos -->
+    </main>
+</body>
+
 </html>
