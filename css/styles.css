@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  bottom: 40px;
+  visibility: hidden;
+}
+
 .background-img {
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;

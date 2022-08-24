@@ -50,14 +50,19 @@
         <a href="#" class="sidebar-brand">Portafolio</a>
         <h5 class="sidebar-title">Secciones</h5>
         <div class="sidebar-divider"></div>
+        <br />
 
-        <a href="#" class="sidebar-link">Inicio</a>
+        <a href="#inicio" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Inicio</a>
+        <a href="#mis-habilidades" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Mis Habilidades</a>
+        <a href="#mis-proyectos" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Mis Proyectos</a>
+        <a href="#contactar" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Contactar</a>
       </div>
     </aside>
     <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
 
-    <main class="content-wrapper" style="margin-bottom: 4em;">
+    <main class="content-wrapper" style="margin-bottom: 4.1em;">
       <!-- Vista inicial -->
+      <a class="anchor" id="inicio"></a>
       <div class="d-flex flex-column justify-content-center align-items-center background-img h-100-vh"
         data-aos-mirror="false">
         <div class="style-inicio" data-aos="fade-down">
@@ -67,8 +72,8 @@
             ambiente del Front-end. ¡Autodidacta y comprometido en aprender
             cada vez más!</h5>
           <div>
-            <button class="btn btn-primary btn-rounded btn-lg">Contactar
-              &nbsp;<i class="fa-solid fa-address-book"></i></button>
+            <a href="#contactar" class="btn btn-primary btn-rounded btn-lg">Contactar
+              &nbsp;<i class="fa-solid fa-address-book"></i></a>
             <button class="btn btn-primary btn-rounded btn-lg">Descargar CV
               &nbsp;<i class="fa-solid fa-file-pdf"></i></button>
           </div>
@@ -77,6 +82,7 @@
       <!-- Vista inicial -->
 
       <!-- Habilidades -->
+      <a class="anchor" id="mis-habilidades"></a>
       <div class="d-flex flex-column justify-content-center align-items-center p-section h-full" data-aos="fade-down">
         <div class="container">
 
@@ -160,6 +166,7 @@
       <!-- Habilidades -->
 
       <!-- Proyectos -->
+      <a class="anchor" id="mis-proyectos"></a>
       <div class="d-flex flex-column justify-content-center align-items-center p-section h-full" data-aos="fade-down">
         <div class="container">
 
@@ -232,6 +239,7 @@
       <!-- Proyectos -->
 
       <!-- Contactar -->
+      <a class="anchor" id="contactar"></a>
       <div class="p-section h-full" data-aos="fade-down">
         <div class="container">
           <div>
