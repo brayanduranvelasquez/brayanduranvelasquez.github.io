@@ -20,6 +20,7 @@
   <script src="./js/aos/aos-2-3-1.js"></script>
   <script src="./js/aos/script.js" defer></script>
   <script src="./js/halfmoon/halfmoon.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="./js/script.js" defer></script>
 </head>
 
@@ -38,7 +39,7 @@
       <a href="#" class="navbar-brand">Brayan</a>
 
       <div class="d-flex ml-auto">
-        <button class="btn" type="button" onclick="toggleDemo()">
+        <button class="btn" type="button" onclick="halfmoon.toggleDarkMode()">
           <i class="fa-solid fa-moon"></i>
         </button>
       </div>
@@ -229,6 +230,53 @@
         </div>
       </div>
       <!-- Proyectos -->
+
+      <!-- Contactar -->
+      <div class="p-section h-full" data-aos="fade-down">
+        <div class="container">
+          <div>
+            <p class="font-size-24 m-0">Contactar</p>
+            <hr style="background-color: #ccc">
+          </div>
+
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="contact-form">
+
+              <div style="margin-top: 2em; margin-bottom: 2em;">
+                <h3>Sería un gusto para mí, poder trabajar contigo. Puedes enviarme un correo llenando el formulario a
+                  continuación:</h3>
+              </div>
+
+              <form id="form">
+                <div class="form-row row-eq-spacing-sm">
+                  <div class="col-sm">
+                    <label for="name" class="required">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre"
+                      required="required" minlength="2" maxlength="25">
+                  </div>
+                  <div class="col-sm">
+                    <label for="email" class="required">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                      required="required" minlength="2" maxlength="30">
+                  </div>
+                </div>
+
+                <div class="form-row row-eq-spacing-sm">
+                  <label for="email" class="required">Mensaje</label>
+                  <textarea class="form-control" placeholder="Escriba el mensaje" id="message" name="message"
+                    minlength="5" maxlength="125"></textarea>
+                </div>
+
+                <div class="text-center">
+                  <input class="btn btn-primary" type="submit" value="Enviar" id="button">
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contacter -->
     </main>
   </div>
 </body>

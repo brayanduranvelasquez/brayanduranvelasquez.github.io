@@ -58,3 +58,9 @@ html {
 .skill img {
   width: 95%;
 }
+
+.contact-form {
+  width: 85%;
+  max-width: 750px;
+  margin-top: 40px;
+}
