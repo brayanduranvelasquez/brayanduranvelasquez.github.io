@@ -1,3 +1,9 @@
+window.onload = () => {
+  setTimeout(() => {
+    document.getElementById("container-loader").style.display = "none";
+  }, 200);
+};
+
 //////////////// Anchor Top ///////////////////////
 
 let anchorTop = document.getElementById("anchorTop");
