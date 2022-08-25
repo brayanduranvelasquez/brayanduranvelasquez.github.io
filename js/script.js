@@ -1,3 +1,19 @@
+//////////////// Anchor Top ///////////////////////
+
+let anchorTop = document.getElementById("anchorTop");
+
+window.onscroll = () => {
+  let yPosition = window.scrollY;
+
+  if (yPosition > 600) {
+    anchorTop.style.display = "flex";
+  } else {
+    anchorTop.style.display = "none";
+  }
+};
+
+//////////////// EMAILJS ///////////////////////
+
 const btn = document.getElementById("button");
 const form = document.getElementById("form");
 emailjs.init("jzAVLBbhppWLY_Ob2");

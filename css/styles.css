@@ -76,6 +76,35 @@ html {
   margin-top: 40px;
 }
 
+footer {
+  position: relative;
+}
+
+#anchorTop {
+  display: none; /* Será manipulado con JS */
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  transition: 0.3s ease all;
+}
+
+#anchorTop:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .contact-footer {
   padding: 1.5em 1em 0em 1em;
 }
