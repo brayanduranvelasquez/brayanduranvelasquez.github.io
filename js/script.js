@@ -25,6 +25,10 @@ function toastDangerAlert() {
   });
 }
 
+function redirect(link) {
+  window.open(link, "_blank");
+}
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
