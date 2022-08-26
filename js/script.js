@@ -47,10 +47,6 @@ function toastDangerAlert() {
   });
 }
 
-function redirect(link) {
-  window.open(link, "_blank");
-}
-
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -73,3 +69,10 @@ form.addEventListener("submit", function (event) {
     }
   );
 });
+
+
+//////////////// REDIRECT ///////////////////////
+
+function redirect(link) {
+  window.open(link, "_blank");
+}

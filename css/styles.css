@@ -10,7 +10,6 @@ a.anchor {
 }
 
 .background-img {
-  background-image: url("../img/background.jpg") !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
