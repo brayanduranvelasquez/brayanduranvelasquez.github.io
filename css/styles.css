@@ -186,3 +186,7 @@ footer {
   align-items: center;
   flex-direction: row;
 }
+
+.pointer:hover {
+  cursor: pointer;
+}
