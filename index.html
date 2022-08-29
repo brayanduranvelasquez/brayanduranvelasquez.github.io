@@ -12,8 +12,8 @@
   <title>Portafolio - Brayan Durán Velásquez</title>
 
   <link href="./css/halfmoon/halfmoon.css" rel="stylesheet" />
-  <link href="./css/aos/aos-2-3-1.css" rel="stylesheet">
-  <link href="./icons/css/line-awesome.min.css" rel="stylesheet">
+  <link href="./css/aos/aos-2-3-1.css" rel="stylesheet" />
+  <link href="./icons/css/line-awesome.min.css" rel="stylesheet" />
   <link href="./css/styles.css" rel="stylesheet" />
   <link href="./css/font.css" rel="stylesheet" />
 
@@ -298,39 +298,30 @@
             <hr style="background-color: #ccc">
           </div>
 
-          <div class="display-flex-center-column">
-            <div class="contact-form">
+          <div class="w-full text-center" style="margin-top: 2.5em;">
+            <h2>Sería un gusto para mí, poder trabajar contigo.</h2>
+          </div>
 
-              <div class="mb-20">
-                <h3>Sería un gusto para mí, poder trabajar contigo. Puedes enviarme un correo llenando el formulario a
-                  continuación:</h3>
+          <div class="row">
+            <div class="col-6 display-flex-center-column">
+              <div class="w-400" style="margin-top: 2em">
+                <div class="display-flex-center-column">
+                  <img class="w-100" src="./img/gmail.svg">
+                  <br>
+                  <button class="btn btn-primary" onclick="redirect('mailto:brayan13s133@gmail.com')">Contactar por
+                    Gmail</button>
+                </div>
               </div>
-
-              <form id="form">
-                <div class="form-row row-eq-spacing-sm">
-                  <div class="col-sm">
-                    <label for="name" class="required">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre"
-                      required="required" minlength="2" maxlength="25">
-                  </div>
-                  <div class="col-sm">
-                    <label for="email" class="required">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
-                      required="required" minlength="2" maxlength="30">
-                  </div>
+            </div>
+            <div class="col-6 display-flex-center-column">
+              <div class="w-400" style="margin-top: 2em">
+                <div class="display-flex-center-column">
+                  <img class="w-100" src="./img/whatsapp.svg">
+                  <br>
+                  <button class="btn btn-primary" onclick="redirect('https://wa.me/+584122033007')">Contactar por
+                    WhatsApp</button>
                 </div>
-
-                <div class="form-row row-eq-spacing-sm">
-                  <label for="email" class="required">Mensaje</label>
-                  <textarea class="form-control" placeholder="Escriba el mensaje" id="message" name="message"
-                    minlength="5" maxlength="125"></textarea>
-                </div>
-
-                <div class="text-center">
-                  <input class="btn btn-primary" type="submit" value="Enviar" id="button">
-                </div>
-              </form>
-
+              </div>
             </div>
           </div>
         </div>
@@ -342,7 +333,7 @@
       <div id="anchorTop" onclick="window.location.href = '#inicio'">
         <i class="la la-angle-up"></i>
       </div>
-      <div class="container">
+      <div class="container pt-15">
         <div class="display-flex-center-row contact-footer">
           <h5 class="text-light">También puedes contactarme por los siguientes medios:</h5>
         </div>
@@ -351,7 +342,6 @@
           <i class="la la-github text-light icon-footer"
             onclick="redirect('https://github.com/brayanduranvelasquez')"></i>
           <i class="la la-twitter text-light icon-footer" onclick="redirect('https://twitter.com/brayanduranv')"></i>
-          <i class="la la-whatsapp text-light icon-footer" onclick="redirect('https://wa.me/+584122033007')"></i>
         </div>
 
         <div class="d-flex flex-row justify-content-start align-items-center">
