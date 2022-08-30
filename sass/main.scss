@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "./base/_mixins";
+@import "./base/_base.scss";
+
+@import "./components/_loader.scss";
+@import "./components/_card.scss";
+@import "./components/_anchorTop.scss";
+
+@import "./layouts/_footer.scss";
+@import "./layouts/_first-section.scss";
+@import "./layouts/_div-skill";

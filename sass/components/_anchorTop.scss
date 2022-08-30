@@ -1,0 +1,24 @@
+#anchorTop {
+  display: none; /* Manipulado con JS */
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  transition: 0.3s ease all;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

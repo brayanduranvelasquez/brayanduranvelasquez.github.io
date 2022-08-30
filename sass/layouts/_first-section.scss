@@ -1,0 +1,12 @@
+.first-section {
+  @include background;
+
+  height: 100vh;
+  max-height: 860px;
+}
+
+.presentation {
+  max-width: 900px;
+  width: 100%;
+  padding: 2em;
+}

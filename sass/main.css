@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.content-wrapper,
+body,
+html {
+  position: relative;
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.display-flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.h-100-vh {
+  height: 100vh;
+}
+
+.p-section {
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  bottom: 40px;
+  visibility: hidden;
+}
+
+.background-img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container-loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.position-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #16293d;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #1890ff;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.card {
+  transition: 0.5s;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.15);
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#anchorTop {
+  display: none; /* Manipulado con JS */
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.3s ease all;
+}
+#anchorTop:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+}
+
+.icon-footer {
+  font-size: 2.3em;
+  margin: 0em 0.2em;
+  transition: 0.3s ease all;
+}
+.icon-footer:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.first-section {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  max-height: 860px;
+}
+
+.presentation {
+  max-width: 900px;
+  width: 100%;
+  padding: 2em;
+}
+
+.div-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  width: 7em;
+  height: 7em;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.div-skill img {
+  width: 95%;
+}
+.div-skill:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=main.css.map */

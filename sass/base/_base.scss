@@ -1,0 +1,56 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.content-wrapper,
+body,
+html {
+  position: relative;
+}
+
+.display-flex-center {
+  @include flex-center;
+
+  &-column {
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  &-row {
+    @include flex-center;
+    flex-direction: row;
+  }
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.h-100-vh {
+  height: 100vh;
+}
+
+.p-section {
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  bottom: 40px;
+  visibility: hidden;
+}
+
+.background-img {
+  @include background;
+}
