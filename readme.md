@@ -22,6 +22,7 @@ Una lista de tecnologías utilizadas en mi portafolio:
 
 - [Halfmoon - Framework CSS](https://www.gethalfmoon.com/): Versión 1.1.1
 - [AOS](https://michalsnik.github.io/aos/): Versión 2.3.1
+- [SASS](https://sass-lang.com/)
 
 ### Adicional
 
