@@ -1,6 +1,6 @@
 # Presentacion
 
-[Mi Portafolio Web](https://brayanduranvelasquez.github.io/)
+[Mi Portafolio Web](https://brayanduranvelasquez-github-io.vercel.app/)
 
 ## Mi Portafolio
 
