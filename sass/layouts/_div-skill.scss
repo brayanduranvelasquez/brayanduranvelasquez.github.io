@@ -5,9 +5,9 @@
   transition: 0.5s;
   width: 7em;
   height: 7em;
-
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border: 1px solid rgba(136, 135, 135, 0.185);
+  border-radius: 15%;
+  padding: 10px;
 
   img {
     width: 95%;

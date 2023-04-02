@@ -1,385 +1,384 @@
 <!DOCTYPE html>
-<html lang="es" class="with-custom-webkit-scrollbars with-custom-css-scrollbars">
+<html lang="en" class="with-custom-webkit-scrollbars with-custom-css-scrollbars">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="Web Portfolio, Personal Portfolio" />
+    <meta name="author" content="Brayan Durán Velásquez" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="keywords" content="Portfolio" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <meta name="keywords" content="Portafolio web, Portafolio personal" />
-  <meta name="author" content="Brayan Durán Velásquez" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="description" content="Portafolio Personal">
-  <meta name="keywords" content="Portafolio">
+    <title>Portfolio - Brayan Durán Velásquez</title>
 
-  <title>Portafolio - Brayan Durán Velásquez</title>
+    <link href="./css/halfmoon/halfmoon.css" rel="stylesheet" />
+    <link href="./css/aos/aos-2-3-1.css" rel="stylesheet" />
+    <link href="./icons/css/line-awesome.min.css" rel="stylesheet" />
+    <link href="./sass/main.css" rel="stylesheet" />
 
-  <link href="./css/halfmoon/halfmoon.css" rel="stylesheet" />
-  <link href="./css/aos/aos-2-3-1.css" rel="stylesheet" />
-  <link href="./icons/css/line-awesome.min.css" rel="stylesheet" />
-  <link href="./sass/main.css" rel="stylesheet" />
+    <script src="./js/aos/aos-2-3-1.js" defer></script>
+    <script src="./js/aos/script.js" defer></script>
+    <script src="./js/halfmoon/halfmoon.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </head>
 
-  <script src="./js/aos/aos-2-3-1.js" defer></script>
-  <script src="./js/aos/script.js" defer></script>
-  <script src="./js/halfmoon/halfmoon.min.js" defer></script>
-  <script src="./js/script.js" defer></script>
-</head>
-
-<body data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
-
-  <div class="container-loader" id="container-loader">
-    <div class="position-loader">
-      <span class="loader"></span>
+  <body data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+    <div class="container-loader" id="container-loader">
+      <div class="position-loader">
+        <span class="loader"></span>
+      </div>
     </div>
-  </div>
 
-  <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-all">
-    <div class="sticky-alerts"></div>
+    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-all">
+      <div class="sticky-alerts"></div>
 
-    <nav class="navbar">
-      <div class="navbar-content">
-        <button class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
-          <i class="la la-bars" aria-hidden="true"></i>
-          <span class="sr-only">Menú</span>
-        </button>
-      </div>
-      <a href="#" class="navbar-brand">Brayan</a>
+      <nav class="navbar">
+        <div class="navbar-content">
+          <button class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+            <i class="la la-bars" aria-hidden="true"></i>
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+        <a href="#" class="navbar-brand">Brayan</a>
 
-      <div class="d-flex ml-auto">
-        <button class="btn" type="button" onclick="halfmoon.toggleDarkMode()">
-          <i class="lar la-moon"></i>
-        </button>
-      </div>
-    </nav>
+        <div class="d-flex ml-auto">
+          <button class="btn" type="button" onclick="halfmoon.toggleDarkMode()">
+            <i class="lar la-moon"></i>
+          </button>
+        </div>
+      </nav>
 
-    <aside class="sidebar">
-      <div class="sidebar-menu">
-        <a href="#" class="sidebar-brand">Portafolio</a>
-        <h5 class="sidebar-title">Secciones</h5>
-        <div class="sidebar-divider"></div>
-        <br />
+      <aside class="sidebar">
+        <div class="sidebar-menu">
+          <a href="#" class="sidebar-brand">Portfolio</a>
+          <h5 class="sidebar-title">Content</h5>
+          <div class="sidebar-divider"></div>
+          <br />
 
-        <a href="#top" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Inicio</a>
-        <a href="#mis-habilidades" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Mis Habilidades</a>
-        <a href="#mis-proyectos" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Mis Proyectos</a>
-        <a href="#contactar" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Contactar</a>
-      </div>
-    </aside>
-    <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+          <a href="#top" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Home</a>
+          <a href="#my-abilities" class="sidebar-link" onclick="halfmoon.toggleSidebar()">My Abilities</a>
+          <a href="#collaborated" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Where I've Collaborated</a>
+          <a href="#my-drafts" class="sidebar-link" onclick="halfmoon.toggleSidebar()">My Drafts</a>
+          <a href="#contact-me" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Contact Me</a>
+        </div>
+      </aside>
+      <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
 
-    <main class="content-wrapper overflow-hidden" style="margin-bottom: 4.1em;">
-      <!-- Vista inicial -->
-      <a class="anchor" id="top"></a>
-      <div class="display-flex-center-column first-section" data-aos-mirror="false"
-        style="background-image: url('./img/background.jpg')">
-        <div class="presentation" data-aos="fade-down">
-          <h1 class="text-white font-weight-bold">Brayan Durán Velásquez</h1>
-          <h5 class="text-white">Actualmente adquiriendo más conocimientos en
-            el campo del desarrollo web. Podemos construir sitios web increíbles juntos. ¡Autodidacta y comprometido en
-            aprender
-            cada vez más!</h5>
-          <div>
-            <a href="#contactar" class="btn btn-primary btn-rounded btn-lg pb-10">Contactar
-              &nbsp;<i class="las la-address-card"></i></a>
-            <a href="./docs/CV.pdf" target="_blank" class="btn btn-primary btn-rounded btn-lg">Ver CV
-              &nbsp;<i class="la la-file-pdf"></i></a>
+      <main class="content-wrapper overflow-hidden" style="margin-bottom: 4.1em">
+        <a class="anchor" id="top"></a>
+        <div class="display-flex-center-column first-section" data-aos-mirror="false" style="background-image: url('./img/background.jpg')">
+          <div class="presentation" data-aos="fade-down">
+            <h1 class="text-white font-weight-bold">Brayan Durán Velásquez</h1>
+            <h5 class="text-white">
+              Hello there! I'm a Front-End Developer. Learning more and more about this huge universe, web development! We can build awesome
+              websites, apps and more together!
+            </h5>
+            <div>
+              <a href="#contact-me" class="btn btn-primary btn-rounded btn-lg pb-10">Contact Me <i class="las la-address-card"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Vista inicial -->
 
-      <!-- Habilidades -->
-      <a class="anchor" id="mis-habilidades"></a>
-      <div class="display-flex-center-column p-section" data-aos="fade-down">
-        <div class="container">
+        <!-- My abilities -->
+        <a class="anchor" id="my-abilities"></a>
+        <div class="display-flex-center-column p-section" data-aos="fade-down">
+          <div class="container">
+            <div>
+              <p class="font-size-24 m-0">My Abilities</p>
+              <hr style="background-color: #ccc" />
+            </div>
 
-          <div>
-            <p class="font-size-24 m-0">Mis Habilidades</p>
-            <hr style="background-color: #ccc">
-          </div>
+            <div class="row">
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/react.svg" />
+                  </div>
+                  <p>React.js</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/next.svg" />
+                  </div>
+                  <p>Nextjs</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/git.svg" />
+                  </div>
+                  <p>Git</p>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/typescript.svg" />
+                  </div>
+                  <p>Typescript</p>
+                </div>
+              </div>
+            </div>
 
-          <div class="row">
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom" data-title="Librería JS">
-                  <img src="./img/skills-icons/react.svg">
+            <div class="row">
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/ejs.svg" />
+                  </div>
+                  <p>EJS</p>
                 </div>
-                <p>React.js</p>
               </div>
-            </div>
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom" data-title="Framework JS">
-                  <img src="./img/skills-icons/vue.svg">
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/sass.svg" />
+                  </div>
+                  <p>SASS</p>
                 </div>
-                <p>Vue.js</p>
               </div>
-            </div>
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom" data-title="Control de versiones">
-                  <img src="./img/skills-icons/git.svg">
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/laravel.svg" />
+                  </div>
+                  <p>Laravel</p>
                 </div>
-                <p>Git</p>
               </div>
-            </div>
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom"
-                  data-title="Superset de JavaScript">
-                  <img src="./img/skills-icons/typescript.svg">
+              <div class="col-6 col-lg-3 display-flex-center-column">
+                <div class="w-200 h-200 display-flex-center-column">
+                  <div class="div-skill">
+                    <img src="./img/skills-icons/mysql.svg" />
+                  </div>
+                  <p>Mysql</p>
                 </div>
-                <p>Typescript</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom"
-                  data-title="Motor de plantillas utilizado en Node.js">
-                  <img src="./img/skills-icons/ejs.svg">
-                </div>
-                <p>EJS</p>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom" data-title="Procesador CSS">
-                  <img src="./img/skills-icons/sass.svg">
-                </div>
-                <p>SASS</p>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom" data-title="Framework PHP">
-                  <img src="./img/skills-icons/laravel.svg">
-                </div>
-                <p>Laravel</p>
-              </div>
-            </div>
-            <div class="col-6 col-lg-3 display-flex-center-column">
-              <div class="w-200 h-200 display-flex-center-column">
-                <div class="div-skill" data-toggle="tooltip" data-placement="bottom"
-                  data-title="Bases de datos relacional">
-                  <img src="./img/skills-icons/mysql.svg">
-                </div>
-                <p>Mysql</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Habilidades -->
+        <!-- My abilities -->
 
-      <!-- Creaciones -->
-      <a class="anchor" id="mis-proyectos"></a>
-      <div class="display-flex-center-column p-section" data-aos="fade-down">
-        <div class="container">
+        <!-- Where I´ve Collaborated -->
+        <a class="anchor" id="collaborated"></a>
+        <div class="display-flex-center-column p-section" data-aos="fade-down">
+          <div class="container">
+            <div>
+              <p class="font-size-24 m-0">Where I´ve Collaborated</p>
+              <hr style="background-color: #ccc" />
+            </div>
 
-          <div>
-            <p class="font-size-24 m-0">Creaciones</p>
-            <hr style="background-color: #ccc">
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="mw-full">
-                <div class="card p-0" onclick="redirect('https://info-local.vercel.app/')">
-                  <div class="w-full h-200 display-flex-center-column background-img"
-                    style="background-image: url('./img/screenshots/info-local.png')">
-                  </div>
-                  <div class="content">
-                    <h2 class="content-title">
-                      InfoLocal
-                    </h2>
-                    <p class="text-muted">
-                      Diseño y desarrollo de una página web estática. Hecho con React, Typescript, Material UI...
-                    </p>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://www.goosesmurfs.com/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/goosesmurfs.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">GooseSmurfs</h2>
+                      <p class="text-muted">
+                        Take your LOL experience to the next level. Their accounts give you a head start on your ranked journey.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="mw-full">
-                <div class="card p-0" onclick="redirect('https://brayanduranvelasquez.github.io/que-es-minecraft/')">
-                  <div class="w-full h-200 display-flex-center-column background-img"
-                    style="background-image: url('./img/screenshots/sitio-web-minecraft.png')">
-                  </div>
-                  <div class="content">
-                    <h2 class="content-title">
-                      Página Web Estática
-                    </h2>
-                    <p class="text-muted">
-                      Maquetación de esta página estática. Desarrollado con el framework BulmaCSS, támbien usando SASS.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="mw-full">
-                <div class="card p-0" onclick="redirect('https://template-landing-material-ui.vercel.app/')">
-                  <div class="w-full h-200 display-flex-center-column background-img"
-                    style="background-image: url('./img/screenshots/template-landing-material-ui.png')">
-                  </div>
-                  <div class="content">
-                    <h2 class="content-title">
-                      Landing page
-                    </h2>
-                    <p class="text-muted">
-                      Creación de página de aterrizaje. Construido con React, Typescript y Material UI...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-                   
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="mw-full">
-                <div class="card p-0" onclick="redirect('https://template-login-material-ui.vercel.app/')">
-                  <div class="w-full h-200 display-flex-center-column background-img"
-                    style="background-image: url('./img/screenshots/login-material-ui.png')">
-                  </div>
-                  <div class="content">
-                    <h2 class="content-title">
-                      Login web
-                    </h2>
-                    <p class="text-muted">
-                      Maquetación web de login y sign-up. Construido con React, Typescript y Material UI...
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="mw-full">
-                <div class="card p-0" onclick="redirect('https://brayanduranvelasquez.github.io/app-de-notas/')">
-                  <div class="w-full h-200 display-flex-center-column background-img"
-                    style="background-image: url('./img/screenshots/app-de-nota.png')">
-                  </div>
-                  <div class="content">
-                    <h2 class="content-title">
-                      App de notas
-                    </h2>
-                    <p class="text-muted">
-                      Aplicación web donde puedes guardar tus notas. Desarrollado con Nuxtjs (Vuejs) y SASS.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="mw-full">
-                <div class="card p-0" onclick="redirect('https://brayanduranvelasquez.github.io/login-react-chakra/')">
-                  <div class="w-full h-200 display-flex-center-column background-img"
-                    style="background-image: url('./img/screenshots/login-chakra-ui.png')">
-                  </div>
-                  <div class="content">
-                    <h2 class="content-title">
-                      Login con Chakra UI
-                    </h2>
-                    <p class="text-muted">
-                      Inicio de sesión sencillo. Hecho con React, usando el increible framework Chakra UI.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-4">
-              <div class="mw-full">
-                <div class="card p-0" onclick="redirect('https://brayanduranvelasquez.github.io/adivina-el-numero/')">
-                  <div class="w-full h-200 display-flex-center-column background-img"
-                  style="background-image: url('./img/screenshots/adivina-el-numero.png')">
-                </div>
-                  <div class="content">
-                    <h2 class="content-title">
-                      ¡Adivina el número!
-                    </h2>
-                    <p class="text-muted">
-                      Mini-juego donde tienes que adivinar un número. Desarrollado con HTML, SASS y JS.
-                    </p>
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://cbaconf.com/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/cba-conference.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">CBA Conference 2023</h2>
+                      <p class="text-muted">
+                        It is the premier beer judging competition in Canada, where over 800 breweries compete for medals in 59 categories.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Proyectos -->
+        <!-- Where I´ve Collaborated -->
 
-      <!-- Contactar -->
-      <a class="anchor" id="contactar"></a>
-      <div class="p-section" style="margin-bottom: 50px;" data-aos="fade-down">
-        <div class="container">
-          <div>
-            <p class="font-size-24 m-0">Contactar</p>
-            <hr style="background-color: #ccc">
-          </div>
+        <!-- My Drafts -->
+        <a class="anchor" id="my-drafts"></a>
+        <div class="display-flex-center-column p-section" data-aos="fade-down">
+          <div class="container">
+            <div>
+              <p class="font-size-24 m-0">My Drafts</p>
+              <hr style="background-color: #ccc" />
+            </div>
 
-          <div class="w-full text-center" style="margin-top: 2.5em;">
-            <h2>Sería un gusto para mí, poder trabajar contigo.</h2>
-          </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://info-local.vercel.app/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/info-local.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">InfoLocal</h2>
+                      <p class="text-muted">Static web. Built with React, Typescript, Material UI.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <div class="row">
-            <div class="col-12 col-md-6 display-flex-center-column">
-              <div class="w-full" style="margin-top: 2em; max-width: 400px;">
-                <div class="display-flex-center-column">
-                  <img class="w-100" src="./img/gmail.svg">
-                  <br>
-                  <button class="btn btn-primary" onclick="redirect('mailto:brayan13s133@gmail.com')">Contactar por
-                    Gmail</button>
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://brayanduranvelasquez.github.io/que-es-minecraft/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/what-is-minecraft.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">Static Web</h2>
+                      <p class="text-muted">Single static web. Built with BulmaCSS, and also using SASS.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://template-login-material-ui.vercel.app/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/login-material-ui.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">Login Web</h2>
+                      <p class="text-muted">Static Log-in and Sign-up. React, Typescript, Material UI.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://template-landing-material-ui.vercel.app/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/template-landing-material-ui.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">Landing page</h2>
+                      <p class="text-muted">Styled landing page. Used React, Typescript y Material UI.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://brayanduranvelasquez.github.io/app-de-notas/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/notes-app.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">Notes App</h2>
+                      <p class="text-muted">When I was learnig about Nuxtjs (Vuejs). Using SASS as well.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://brayanduranvelasquez.github.io/adivina-el-numero/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/guess-it.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">Guess it!</h2>
+                      <p class="text-muted">Mini-game. My first app using HTML, CSS and JS.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 display-flex-center-column">
-              <div class="w-full" style="margin-top: 2em; max-width: 400px;">
-                <div class="display-flex-center-column">
-                  <img class="w-100" src="./img/whatsapp.svg">
-                  <br>
-                  <button class="btn btn-primary" onclick="redirect('https://wa.me/+584122033007')">Contactar por
-                    WhatsApp</button>
+          </div>
+        </div>
+        <!-- My drafts -->
+
+        <!-- Contact me -->
+        <a class="anchor" id="contact-me"></a>
+        <div class="p-section" style="margin-bottom: 65px" data-aos="fade-down">
+          <div class="container">
+            <div>
+              <p class="font-size-24 m-0">Contact Me</p>
+              <hr style="background-color: #ccc" />
+            </div>
+
+            <div class="w-full text-center" style="margin-top: 65px">
+              <h2>It would be my pleasure, to work with you!</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 display-flex-center-column">
+                <div class="w-full" style="margin-top: 2em; max-width: 400px">
+                  <div class="display-flex-center-column">
+                    <img class="w-100" src="./img/gmail.svg" />
+                    <br />
+                    <button class="btn btn-primary" onclick="redirect('mailto:brayan13s133@gmail.com')">Contact by Gmail</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 display-flex-center-column">
+                <div class="w-full" style="margin-top: 2em; max-width: 400px">
+                  <div class="display-flex-center-column">
+                    <img class="w-100" src="./img/whatsapp.svg" />
+                    <br />
+                    <button class="btn btn-primary" onclick="redirect('https://wa.me/+584122033007')">Contact by WhatsApp</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Contactar -->
-    </main>
+        <!-- Contactar -->
+      </main>
 
-    <footer class="d-flex flex-column py-5 bg-dark">
-      <div id="anchorTop" onclick="window.location.href = '#top'">
-        <i class="la la-angle-up"></i>
-      </div>
-
-      <div class="container pt-15 px-20">
-        <div class="display-flex-center-row contact-footer text-center">
-          <h5 class="text-light">También puedes contactarme por los siguientes medios:</h5>
+      <footer class="d-flex flex-column bg-dark" style="padding: 45px">
+        <div id="anchorTop" onclick="window.location.href = '#top'">
+          <i class="la la-angle-up"></i>
         </div>
 
-        <div class="display-flex-center-row">
-          <i class="la la-github text-light icon-footer"
-            onclick="redirect('https://github.com/brayanduranvelasquez')"></i>
-          <i class="la la-twitter text-light icon-footer" onclick="redirect('https://twitter.com/brayanduranv')"></i>
-        </div>
+        <div class="container pt-15 px-20">
+          <div class="display-flex-center-row contact-footer text-center">
+            <h5 class="text-light">You can also find me here:</h5>
+          </div>
 
-        <div class="d-flex flex-row justify-content-start align-items-center">
-          <div class="d-flex flex-row align-items-center px-20 pt-10">
-            <p class="text-light">2022 - Hecho con <a onclick="redirect('https://www.gethalfmoon.com/')"
-                class="pointer">Halfmoon</a> y <a onclick="redirect('https://icons8.com/line-awesome')"
-                class="pointer">Line Awesome</a></p> &nbsp;
+          <div class="display-flex-center-row">
+            <i class="la la-github text-light icon-footer" onclick="redirect('https://github.com/brayanduranvelasquez')"></i>
+            <i class="la la-twitter text-light icon-footer" onclick="redirect('https://twitter.com/eduardove_742')"></i>
+          </div>
+
+          <div class="d-flex flex-row justify-content-start align-items-center">
+            <div class="d-flex flex-row align-items-center px-20 pt-10">
+              <p class="text-light">
+                Last update: 02 / 04 / 2023 - Built with
+                <a onclick="redirect('https://www.gethalfmoon.com/')" class="pointer">Halfmoon</a> and
+                <a onclick="redirect('https://icons8.com/line-awesome')" class="pointer">Line Awesome</a>
+              </p>
+              &nbsp;
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>

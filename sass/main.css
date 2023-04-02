@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 .content-wrapper,
@@ -88,10 +88,10 @@ a.anchor {
   border-right: 4px solid transparent;
   box-sizing: border-box;
   -webkit-animation: rotation 1s linear infinite;
-          animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
 }
 .loader::after {
-  content: "";
+  content: '';
   box-sizing: border-box;
   position: absolute;
   left: 0;
@@ -187,11 +187,13 @@ footer {
   transition: 0.5s;
   width: 7em;
   height: 7em;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border: 1px solid rgba(136, 135, 135, 0.185);
+  border-radius: 15%;
+  padding: 10px;
 }
 .div-skill img {
   width: 95%;
 }
 .div-skill:hover {
   transform: scale(1.05);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
