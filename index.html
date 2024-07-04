@@ -24,12 +24,6 @@
   </head>
 
   <body data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
-    <div class="container-loader" id="container-loader">
-      <div class="position-loader">
-        <span class="loader"></span>
-      </div>
-    </div>
-
     <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-all">
       <div class="sticky-alerts"></div>
 
@@ -57,7 +51,6 @@
           <br />
 
           <a href="#top" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Home</a>
-          <a href="#my-abilities" class="sidebar-link" onclick="halfmoon.toggleSidebar()">My Abilities</a>
           <a href="#collaborated" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Where I've Collaborated</a>
           <a href="#my-drafts" class="sidebar-link" onclick="halfmoon.toggleSidebar()">My Drafts</a>
           <a href="#contact-me" class="sidebar-link" onclick="halfmoon.toggleSidebar()">Contact Me</a>
@@ -69,97 +62,99 @@
         <a class="anchor" id="top"></a>
         <div class="display-flex-center-column first-section" data-aos-mirror="false" style="background-image: url('./img/background.jpg')">
           <div class="presentation" data-aos="fade-down">
-            <h1 class="text-white font-weight-bold">Brayan Durán Velásquez</h1>
-            <h5 class="text-white">
-              Hello there! I'm a Front-End Developer. Learning more and more about this huge universe, web development! We can build awesome
-              websites, apps and more together!
-            </h5>
+            <h1 class="text-white font-weight-bold" style="margin: 0px">Brayan Durán Velásquez</h1>
+            <h3 class="text-white font-weight-light" style="margin: 0px">FrontEnd Developer!</h3>
+            <h4 class="text-white" style="margin: 40px 0px">
+              I am a web developer with a passion for crafting websites using ReactJS that deliver an exceptional user experience.
+            </h4>
             <div>
               <a href="#contact-me" class="btn btn-primary btn-rounded btn-lg pb-10">Contact Me <i class="las la-address-card"></i></a>
             </div>
           </div>
         </div>
 
-        <!-- My abilities -->
-        <a class="anchor" id="my-abilities"></a>
-        <div class="display-flex-center-column p-section" data-aos="fade-down">
-          <div class="container">
-            <div>
-              <p class="font-size-24 m-0">My Abilities</p>
-              <hr style="background-color: #ccc" />
-            </div>
+        <!-- 
+           <a class="anchor" id="my-abilities"></a>
+           <div class="display-flex-center-column p-section" data-aos="fade-down">
+             <div class="container">
+               <div>
+                 <p class="font-size-24 m-0">My Abilities</p>
+                 <hr style="background-color: #ccc" />
+               </div>
+   
+               <div class="row">
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/react.svg" />
+                     </div>
+                     <p>React.js</p>
+                   </div>
+                 </div>
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/next.svg" />
+                     </div>
+                     <p>Nextjs</p>
+                   </div>
+                 </div>
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/git.svg" />
+                     </div>
+                     <p>Git</p>
+                   </div>
+                 </div>
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/typescript.svg" />
+                     </div>
+                     <p>Typescript</p>
+                   </div>
+                 </div>
+               </div>
+   
+               <div class="row">
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/ejs.svg" />
+                     </div>
+                     <p>EJS</p>
+                   </div>
+                 </div>
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/sass.svg" />
+                     </div>
+                     <p>SASS</p>
+                   </div>
+                 </div>
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/laravel.svg" />
+                     </div>
+                     <p>Laravel</p>
+                   </div>
+                 </div>
+                 <div class="col-6 col-lg-3 display-flex-center-column">
+                   <div class="w-200 h-200 display-flex-center-column">
+                     <div class="div-skill">
+                       <img src="./img/skills-icons/mysql.svg" />
+                     </div>
+                     <p>Mysql</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+          -->
 
-            <div class="row">
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/react.svg" />
-                  </div>
-                  <p>React.js</p>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/next.svg" />
-                  </div>
-                  <p>Nextjs</p>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/git.svg" />
-                  </div>
-                  <p>Git</p>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/typescript.svg" />
-                  </div>
-                  <p>Typescript</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/ejs.svg" />
-                  </div>
-                  <p>EJS</p>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/sass.svg" />
-                  </div>
-                  <p>SASS</p>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/laravel.svg" />
-                  </div>
-                  <p>Laravel</p>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3 display-flex-center-column">
-                <div class="w-200 h-200 display-flex-center-column">
-                  <div class="div-skill">
-                    <img src="./img/skills-icons/mysql.svg" />
-                  </div>
-                  <p>Mysql</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- My abilities -->
 
         <!-- Where I´ve Collaborated -->
@@ -167,7 +162,7 @@
         <div class="display-flex-center-column p-section" data-aos="fade-down">
           <div class="container">
             <div>
-              <p class="font-size-24 m-0">Where I´ve Collaborated</p>
+              <p class="font-size-24 m-0">Websites of which I have been a part</p>
               <hr style="background-color: #ccc" />
             </div>
 
@@ -197,10 +192,43 @@
                       style="background-image: url('./img/screenshots/cba-conference.png')"
                     ></div>
                     <div class="content">
-                      <h2 class="content-title">CBA Conference 2023</h2>
+                      <h2 class="content-title">CBA Conference 2024</h2>
                       <p class="text-muted">
-                        It is the premier beer judging competition in Canada, where over 800 breweries compete for medals in 59 categories.
+                        It is a prestigious and renowned event that celebrates the exceptional quality and diversity of Canadian beer.
                       </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://brewers.canadianbrewingawards.com/')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/brewers.png')"
+                    ></div>
+
+                    <div class="content">
+                      <h2 class="content-title">Brewers Portal</h2>
+                      <p class="text-muted">
+                        The Brewers Portal is a platform for breweries to register, manage their information, and submit entries.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="mw-full">
+                  <div class="card p-0" onclick="redirect('https://cenipa.web.ve/panel')">
+                    <div
+                      class="w-full h-200 display-flex-center-column background-img"
+                      style="background-image: url('./img/screenshots/cenipa.png')"
+                    ></div>
+                    <div class="content">
+                      <h2 class="content-title">CENIPA</h2>
+                      <p class="text-muted">CENIPA (National Center for Fisheries and Aquaculture Research)</p>
                     </div>
                   </div>
                 </div>
@@ -324,7 +352,11 @@
             </div>
 
             <div class="w-full text-center" style="margin-top: 65px">
-              <h2>It would be my pleasure, to work with you!</h2>
+              <h4>
+                I'm confident that by collaborating, we can achieve some amazing things. Whether you have a clear vision in mind or need
+                some fresh ideas, I'm here to listen and help bring your project to life. I'm eager to learn more about your goals and work
+                together to find the perfect solution.
+              </h4>
             </div>
 
             <div class="row">
@@ -340,9 +372,11 @@
               <div class="col-12 col-md-6 display-flex-center-column">
                 <div class="w-full" style="margin-top: 2em; max-width: 400px">
                   <div class="display-flex-center-column">
-                    <img class="w-100" src="./img/whatsapp.svg" />
+                    <img class="w-100" src="./img/discord.ico" />
                     <br />
-                    <button class="btn btn-primary" onclick="redirect('https://wa.me/+584122033007')">Contact by WhatsApp</button>
+                    <button class="btn btn-primary" onclick="redirect('https://discord.com/users/1030571217423433799')">
+                      Contact by Discord
+                    </button>
                   </div>
                 </div>
               </div>
@@ -364,13 +398,12 @@
 
           <div class="display-flex-center-row">
             <i class="la la-github text-light icon-footer" onclick="redirect('https://github.com/brayanduranvelasquez')"></i>
-            <i class="la la-twitter text-light icon-footer" onclick="redirect('https://twitter.com/eduardove_742')"></i>
           </div>
 
           <div class="d-flex flex-row justify-content-start align-items-center">
             <div class="d-flex flex-row align-items-center px-20 pt-10">
               <p class="text-light">
-                Last update: 02 / 04 / 2023 - Built with
+                Last update: 04 / 07 / 2024 - Built with
                 <a onclick="redirect('https://www.gethalfmoon.com/')" class="pointer">Halfmoon</a> and
                 <a onclick="redirect('https://icons8.com/line-awesome')" class="pointer">Line Awesome</a>
               </p>
